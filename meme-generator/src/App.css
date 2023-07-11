@@ -1,37 +1,33 @@
 .Header{
   display: flex;
   align-items: center;
+  /* align-content: center; */
   padding: 10px;
-  border-radius: 10px;
-  background-color: bisque;
+  background-color: #b878d6;
 }
 .Image{
-  padding: 20px;
-  width:50px;
-  height: 50px;
+  width:200px;
+  height: 100px;
+
 
 }
 
-.Text{
+.Text {
   font-size: 20px;
-  padding: 10px;
-  margin-right: auto;
-  
-
+  font-weight: 200;
 }
-.Form{
+
+.Form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 10px;
-
 }
-.Body{
-  position: relative;
+
+.Body {
   padding: 30px;
-
 }
 
-button{
+button {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
@@ -39,24 +35,21 @@ button{
   color: white;
   border: none;
   cursor: pointer;
-
-
 }
-.MemeImage{
+
+.MemeImage {
   max-width: 100%;
-  max-height: 100%;
- 
-
 }
 
-.texts{
-  position:relative ;
+.texts {
+  position: relative;
   margin-top: 10px;
 }
-.top{
-  top: 0;
+
+.top,
+.bottom {
   position: absolute;
-  width: 80%;
+  max-width: 80%; /* Changed to max-width */
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
@@ -67,39 +60,13 @@ button{
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
 }
-.bottom{
-  position: absolute;
-  width: 80%;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 15px 0;
-  padding: 0 5px;
-  font-family: impact, sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;  
-      bottom: 0;
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
